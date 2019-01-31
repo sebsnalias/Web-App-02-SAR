@@ -1,6 +1,6 @@
 import web
 
-urls= ('/clientes','application.controllers.clientes.index.Index',
+urls= ('/','application.controllers.clientes.index.Index',
 	'/insert','application.controllers.clientes.insert.Insert',
 	'/update(.*)','application.controllers.clientes.update.Update',
 	'/delete(.*)','application.controllers.clientes.delete.Delete',

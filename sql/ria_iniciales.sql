@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS ria_iniciales;
 CREATE DATABASE ria_iniciales;
 
 USE ria_iniciales;
@@ -24,17 +25,17 @@ VALUES ('Linda','Silva','Ramirez','lindasilra@email','Ocampo #53'),
 ('Ana','Lopez','Mateos','aloteos@email','Arboledas #25');
 
 INSERT INTO productos(nombre_prod,tipo,descripcion,marca,origen)
-VALUES ('Leche','alimento','Leche 100% pura de vaca','alpura','Mexico')
-('huevos','alimento','Huevos de rancho','Don huevo','Mexico')
-('sandalias','calzado','Las mejores de la zona','Sandi','China')
+VALUES ('Leche','alimento','Leche 100% pura de vaca','alpura','Mexico'),
+('huevos','alimento','Huevos de rancho','Don huevo','Mexico'),
+('sandalias','calzado','Las mejores de la zona','Sandi','China');
 
 SHOW TABLES;
 
-SELECT FROM * clientes;
+SELECT * FROM clientes;
 
 DESCRIBE clientes;
 
-SELECT FROM * productos;
+SELECT * FROM productos;
 
 DESCRIBE productos;
 

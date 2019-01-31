@@ -10,11 +10,9 @@ def select_clientes():
 		print "Model select_clientes Message{}".format(e.message)
 		return None 
 
-def select_nombre(nombre)
+def select_nombre(nombre):
 	try:
-		return db.select('clientes',
-			where 'nombre=$nombre',
-			vars=locals())[0]
+		return db.select('clientes',where = 'nombre=$nombre',vars=locals())[0]
 	except Exception as e:
 		print "Model select_nombre Error()".format.args(e.args)
 		print "Model select_clientes Message{}".format(e.message)
@@ -36,7 +34,7 @@ def insert_cliente(nombre,ap_paterno,ap_materno,email,direccion):
 def delete_cliente(nombre):
 	try:
 		return db.delete('clientes',
-		where'nombre=$nombre',
+		where ='nombre=$nombre',
 		vars=locals())
 	except Exception as e:
 		print "Model delete_cliente Error()".format.args(e.args)
@@ -50,7 +48,7 @@ def update_cliente(nombre,ap_paterno,ap_materno,email,direccion):
 		ap_materno=ap_materno,
 		email=email,
 		direccion=direccion,
-		where='nombre=$nombre',
+		where ='nombre=$nombre',
 		vars=locals())
 	except Exception as e:
 		print "Model update_cliente Error()".format.args(e.args)
