@@ -8,7 +8,7 @@ class Insert:
 	def GET(self):
 		return config.render.insert()
 
-	def POST(self)
+	def POST(self):
 		formulario = web.input()
 		nombre_prod = formulario['nombre_prod']
 		tipo = formulario['tipo']

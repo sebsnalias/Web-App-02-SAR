@@ -12,5 +12,9 @@ class Delete:
 	def POST(self,nombre_prod):
 		formulario = web.input()
 		nombre_prod = formulario['nombre_prod']
+		tipo = formulario ['tipo']
+		descripcion = formulario ['descripcion']
+		marca = formulario ['marca']
+		origen = formulario ['origen']
 		config.model_productos.delete_producto(nombre_prod)
 		raise web seeother('/')
