@@ -10,10 +10,10 @@ def select_clientes():
 		print "Model select_clientes Message {}",format(e.message)
 		return None 
 
-def select_nombre(cliente):
+def select_nombre(nombre):
 	try:
 		return db.select('clientes',
-			where='nombre=$cliente',
+			where='nombre=$nombre',
 			vars=locals())[0]
 	except Exception as e:
 		print "Model select_nombre Error {}",format(e.args)
